@@ -1,4 +1,4 @@
-Algoritmo Ejercicio_12
+Algoritmo Ejercicio_13
 	
 	definir num,menor,menor1,mayor,mayor1 como entero
 	
