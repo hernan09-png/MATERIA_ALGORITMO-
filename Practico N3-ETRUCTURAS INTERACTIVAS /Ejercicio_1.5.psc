@@ -1,4 +1,5 @@
 Algoritmo Ejercicio_15
+//TENGO QUE TERMINARLO
 //15.Dado N notas de un estudiante calcular:
 	//a. Cuantas notas tiene desaprobadas.
 	//b. Cuantas notas tiene aprobadas.
