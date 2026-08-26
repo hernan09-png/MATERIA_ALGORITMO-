@@ -19,7 +19,7 @@ Algoritmo Ejercicio_11
 		
 	FinPara
 	
-	escribir mayor
+	escribir "el numero menor es ",mayor
 FinAlgoritmo
 
 
