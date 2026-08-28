@@ -1,46 +1,59 @@
 Algoritmo Ejercicio_15
-//TENGO QUE TERMINARLO
-//15.Dado N notas de un estudiante calcular:
-	//a. Cuantas notas tiene desaprobadas.
-	//b. Cuantas notas tiene aprobadas.
-	//c. El promedio de las notas.
-	//d. El promedio de las notas aprobadas y desaprobadas.
-	//Repetir el proceso para las notas, tantas veces N se indique.
+	// 15.Dado N notas de un estudiante calcular:
+	// a. Cuantas notas tiene desaprobadas.
+	// b. Cuantas notas tiene aprobadas.
+	// c. El promedio de las notas.
+	// d. El promedio de las notas aprobadas y desaprobadas.
 	
-	Definir notas,cantidad_de_veces Como Entero
+	Definir notas,nota Como Entero
+	Definir aprobadas,desaprobadas Como Entero
+	Definir suma,suma_aprobadas,suma_desaprobadas Como Real
+	Definir promedio,promedio_aprobadas,promedio_desaprobadas Como Real
 	
-	escribir "cuantas veces va a ingresar notas"
-	leer cantidad_de_veces
+	Escribir "Cuantas notas va a ingresar"
+	Leer notas
 	
-	escribir "cuantas notas va a ingresar"
-	leer notas
+	aprobadas=0
+	desaprobadas=0
+	suma=0
+	suma_aprobadas=0
+	suma_desaprobadas=0
 	
-	Definir desaprobadas,aprobadas Como Real
-	definir contador1,contador2 Como Entero
-	
-	Para i=1 Hasta cantidad_de_veces Hacer
-		Escribir "Notas del alumno#",i
-		escribir"--------------------"
+	Para i=1 Hasta notas Hacer
 		
-		Para j=1 Hasta notas  Hacer
-			leer notas
-			
-			si notas<6 Entonces
-				
-				contador1=contador1+notas
-				
-			SiNo
-				si notas >= 6 Entonces
-					contador2=contador2+notas
-					
-				finsi
-				
-			FinSi
-			
-		FinPara
+		Escribir "Ingrese la nota #",i
+		Leer nota
 		
+		suma=suma+nota
+		
+		Si nota<6 Entonces
+			desaprobadas=desaprobadas+1
+			suma_desaprobadas=suma_desaprobadas+nota
+		SiNo
+			aprobadas=aprobadas+1
+			suma_aprobadas=suma_aprobadas+nota
+		FinSi
 		
 	FinPara
-	escribir contador1   ,  contador2
+	
+	promedio=suma/notas
+	
+	Si aprobadas>0 Entonces
+		promedio_aprobadas=suma_aprobadas/aprobadas
+	SiNo
+		promedio_aprobadas=0
+	FinSi
+	
+	Si desaprobadas>0 Entonces
+		promedio_desaprobadas=suma_desaprobadas/desaprobadas
+	SiNo
+		promedio_desaprobadas=0
+	FinSi
+	
+	Escribir "Cantidad de notas desaprobadas: ",desaprobadas
+	Escribir "Cantidad de notas aprobadas: ",aprobadas
+	Escribir "Promedio de todas las notas: ",promedio
+	Escribir "Promedio de las notas aprobadas: ",promedio_aprobadas
+	Escribir "Promedio de las notas desaprobadas: ",promedio_desaprobadas
+	
 FinAlgoritmo
-
