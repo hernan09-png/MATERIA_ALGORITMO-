@@ -5,6 +5,7 @@ Algoritmo Ejercicio_17
 	
 	definir num,suma  como entero 
 	suma=0
+
 	Repetir
 		
 		leer num
