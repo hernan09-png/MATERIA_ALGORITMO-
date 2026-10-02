@@ -1,4 +1,4 @@
-Algoritmo Ejercicio_19
+Algoritmo Ejercicio_20
 	//20. Solicitar un número comprendido entre 1 y 10. Si el usuario ingresa un valor fuera
 	//de ese intervalo, deberá solicitarlo nuevamente hasta que ingrese un número válido.
 	
