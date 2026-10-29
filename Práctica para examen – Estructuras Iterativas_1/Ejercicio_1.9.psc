@@ -6,6 +6,7 @@ Algoritmo Ejercicio_19
 	definir contraseña como entero 
 	
 	Repetir
+        
 		leer contraseña 
 		
 	Hasta Que contraseña=1234
